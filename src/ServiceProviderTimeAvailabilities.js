@@ -47,7 +47,7 @@ function ServiceProviderMySlots({ StyledTableCell, reloadpageParm }) {
 
     function fetchingMyServicesData() {
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })
@@ -81,7 +81,7 @@ function ServiceProviderMySlots({ StyledTableCell, reloadpageParm }) {
             }
           }`;
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })

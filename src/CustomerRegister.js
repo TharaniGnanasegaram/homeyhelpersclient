@@ -156,7 +156,7 @@ function CustomerRegister() {
               
           `
 
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query, variables: { username: newCustomer.username, password: newCustomer.password, firstname: newCustomer.firstname, lastname: newCustomer.lastname, email: newCustomer.email, contactnumber: newCustomer.contactnumber, address: newCustomer.address } })

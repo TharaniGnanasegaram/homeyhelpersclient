@@ -55,7 +55,7 @@ function TimeSlotBooking({ StyledTableCell, serviceproviderserviceid, duration }
 
     function fetchingMyServicesData() {
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })
@@ -78,7 +78,7 @@ function TimeSlotBooking({ StyledTableCell, serviceproviderserviceid, duration }
 
    async function fetchingServiceProviderData() {
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: queryServiceProvider })
@@ -119,7 +119,7 @@ function TimeSlotBooking({ StyledTableCell, serviceproviderserviceid, duration }
               }
           `
 
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

@@ -168,7 +168,7 @@ function AddTimeAvailable() {
               }
           `
 
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -216,7 +216,7 @@ function AddTimeAvailable() {
                     }
                 `;
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: queryTimeSlots })
@@ -251,7 +251,7 @@ function AddTimeAvailable() {
           }
         `;
 
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })
@@ -314,7 +314,7 @@ function AddTimeAvailable() {
 
     function fetchingData() {
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })

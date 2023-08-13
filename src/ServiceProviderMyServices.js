@@ -38,7 +38,7 @@ function ServiceProviderMyServices({ StyledTableCell, openPopupForm, openReviewP
 
     function fetchingMyServicesData() {
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })
@@ -69,7 +69,7 @@ function ServiceProviderMyServices({ StyledTableCell, openPopupForm, openReviewP
             }
           }`;
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })

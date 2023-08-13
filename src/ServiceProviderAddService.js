@@ -182,7 +182,7 @@ function ServiceProviderAddService() {
               }
           `
 
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query, variables: { serviceproviderid: newServiceProviderService.serviceproviderid, serviceid: newServiceProviderService.serviceid, hourlyrate: newServiceProviderService.hourlyrate, experience: newServiceProviderService.experience } })
@@ -229,7 +229,7 @@ function ServiceProviderAddService() {
 
     function fetchingData() {
 
-        fetch('http://localhost:4000/graphql', {
+        fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query })

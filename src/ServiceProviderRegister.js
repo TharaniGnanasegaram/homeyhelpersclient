@@ -146,7 +146,7 @@ function ServiceProviderPortal() {
           }
           `
 
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://juicy-inky-porcupine.glitch.me/graphql', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query, variables: { username: newServiceProvider.username, password: newServiceProvider.password, firstname: newServiceProvider.firstname, lastname: newServiceProvider.lastname, email: newServiceProvider.email, contactnumber: newServiceProvider.contactnumber } })
