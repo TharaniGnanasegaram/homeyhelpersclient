@@ -551,3 +551,132 @@ body{
     margin: 10px;
 }
 
+@media only all and (max-width:1024px) {
+
+.nav {
+    padding: 0px 0px 5px 0px;
+    float: none;
+    width: 100%;
+    margin: auto;
+}
+
+.nav_ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#logoimglogin{
+    max-width: 15%;
+}
+
+.buttonstyle {
+    font-size: 1em;
+}
+
+.clicktextBook{
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.addserviceformdiv  {
+    width: 70%;
+}
+
+#addserviceslotdiv  {
+    width: 70%;
+}
+
+}
+
+@media only all and (max-width:760px) {
+
+    #logoimg{
+        max-width: 20%;
+    }
+
+    .twocolumnslogin{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 3%;
+        align-items: center;
+        justify-content: center;
+      }
+
+.nav {
+    padding: 0px 0px 5px 0px;
+    float: none;
+    width: 100%;
+    margin: auto;
+}
+
+.nav_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.nav_ul li{
+    display: block;
+    padding-top: 12px;
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#logoimglogin{
+    float: none;
+    margin-left: 2%;
+    max-width: 25%;
+}
+
+.buttonDivService {
+    flex-direction: column;
+}
+
+
+.buttonstyle {
+    font-size: 0.8em;
+}
+
+#serprohead{
+    font-size: 24px;
+  }
+
+  .servhomeimg{
+    max-width: 90%;
+}
+
+.addserviceformdiv  {
+    width: 90%;
+}
+
+#addserviceslotdiv  {
+    width: 90%;
+}
+
+#serviceprodetails{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.twocolumns{
+    grid-template-columns: 1fr;
+    margin: 0%;
+  }
+
+}
